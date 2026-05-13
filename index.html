@@ -196,18 +196,17 @@ body {
     margin-bottom: 8px;
 }
 
-.logo-placeholder {
+.logo-video {
     width: 250px;
-    height: 250px;
-    border: 3px dashed #d97706;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1e293b;
-    font-weight: bold;
-    background-color: rgba(255,255,255,0.35);
     flex-shrink: 0;
+}
+.logo-video {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #d97706;
+    object-fit: cover;
+    background-color: rgba(255,255,255,0.2);
 }
     </style>
 <header class="hero-header">
@@ -293,8 +292,10 @@ body {
             </div>
         </div>
 
-        <div class="logo-placeholder">
-            Logo Placeholder
+        <div  class="logo-video-column">
+    <video autoplay muted loop playsinline class="logo-video">
+        <source src="media-portfolio-redesign/portfolio.logo.navy.mp4" type="video/mp4">
+    </video>
         </div>
     </div>
 </section>
