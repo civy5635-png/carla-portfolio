@@ -161,6 +161,21 @@ body {
     height: 3px;
     background: linear-gradient(to right, transparent, #d97706, transparent);
 }
+.video-column {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.video-caption {
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #1e293b;
+    background-color: rgba(255,255,255,0.35);
+    border-left: 4px solid #d97706;
+    border-radius: 12px;
+}
     </style>
 <header class="hero-header">
     <div class="overlay">
@@ -212,11 +227,16 @@ body {
             <p>Every new skill I learn brings me closer to my goal of building websites and automation tools for small businesses. Those black screens with code no longer scare me quite so much — which is a sentence I never expected to write.</p>
         </div>
 
-        <video autoplay muted loop playsinline class="section-video">
-    <source src="media-portfolio-redesign/ai-video.mp4" type="video/mp4">
-</video>
+        <div class="video-column">
+    <video autoplay muted loop playsinline class="section-video">
+        <source src="media-portfolio-redesign/ai-video.mp4" type="video/mp4">
+    </video>
             </div>
+  <div class="video-caption">Responsible AI isn’t about replacing human effort — it’s about expanding what determined people can achieve.
+      </div>  
+    </div>        
 </section>
+
 
 
 </body>
