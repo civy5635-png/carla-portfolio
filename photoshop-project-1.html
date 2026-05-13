@@ -4,6 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoshop Projects 1</title>
+      <style>
+       body {
+            background-color: #f4e7d3;
+            color: #333333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-header {
+            background-image: url('media-portfolio-redesign/portfolio-header.png');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff8e7;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.45);
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        .hero-header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero-header nav a {
+            color: #d97706;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .hero-header nav a:hover {
+            color: #fbbf24;
+            text-decoration: underline;
+        }
+        
+body {
+    background-color: #f5e6d3;
+    font-family: Arial, sans-serif;
+}
+    .site-footer {
+    background-color: #1e293b;
+    color: #f5e6d3;
+    padding: 45px 96px 45px;
+    margin-top: 60px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.site-footer h3 {
+    color: #d97706;
+    margin-bottom: 8px;
+}
+
+.site-footer a {
+    color: #d97706;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #f5e6d3;
+    text-decoration: underline;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-nav {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.footer-websites {
+    margin-top: 20px;
+}
+
+.footer-credit {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: rgba(245, 230, 211, 0.75);
+}
+</head>style>
 </head>
 <body>
 
@@ -65,5 +162,38 @@ shut it down for the day</p>
 Next, I duplicated the back card artboard and named it 'logo'. I used the ellipse tool, holding down the Shift key, to create the circle background, then filled it with green. On a separate layer, I added a small patch of grass graphic, right-clicked, and chose blending options > color overlay> black to make the graphic black. I made two more layers to put the business name text in black.</p>
 
 <p>On day two, I downloaded my logo as a PDF and uploaded it to the library so I could put it on the back of the card. To create the hero banner, I opened a new file with the settings recommended by my friend ChatGPT and used the same background and grass graphic on separate layers. I kept accidentally creating an extra text layer that I had to delete on both days. I added the logo from the library, the business name, and the rest of the text to 4 different layers. I opened another file with square dimensions for the social media post. As with the others, I used a black background, grass graphic, and added a lawnmower graphic on different layers. To make the lawnmower look like it was in the grass rather than on top of it, I clicked Mask > Subtract from Mask, then used the Brush tool to erase some of the tires. I then exported all of those files as PNGs for my project file.</p>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3>Ella Digital Consulting</h3>
+            <p>Carla Ivy</p>
+            <p>Email: <a href="mailto:carla@email.ellaonline.org">carla@email.ellaonline.org</a></p>
+            <p>Phone: <a href="tel:12543584794">(254) 358-4794</a></p>
+        </div>
+
+        <div class="footer-right">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a> |
+                <a href="resume.html">Resume</a> |
+                <a href="photoshop-project-1.html">Photoshop Projects</a> |
+                <a href="video-animation.html">Video & Animation</a> |
+                <a href="websites.html">Websites</a> |
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-websites">
+                <p>Websites:</p>
+                <a href="https://ellaonline.org" target="_blank">ellaonline.org</a><br>
+                <a href="https://info.ellaonline.org" target="_blank">info.ellaonline.org</a><br>
+                <a href="https://automation.ellaonline.org" target="_blank">automation.ellaonline.org</a>
+            </div>
+
+            <p class="footer-credit">Header image photo by Carrie Shack</p>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
