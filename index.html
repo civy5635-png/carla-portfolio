@@ -145,18 +145,14 @@ body {
     line-height: 1.6;
 }
 
-.image-placeholder {
+ .section-video {
     width: 250px;
-    height: 180px;
-    border: 3px dashed #d97706;
+    height: auto;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1e293b;
-    font-weight: bold;
-    flex-shrink: 0;
-    background-color: rgba(255, 255, 255, 0.35);
+    object-fit: cover;
+    border: 3px solid #d97706;
+    margin-top: 20px;
+
 }
 
 .section-divider {
@@ -216,10 +212,10 @@ body {
             <p>Every new skill I learn brings me closer to my goal of building websites and automation tools for small businesses. Those black screens with code no longer scare me quite so much — which is a sentence I never expected to write.</p>
         </div>
 
-        <div class="image-placeholder">
-        Image Placeholder
-    
-        </div>
+        <video autoplay muted loop playsinline class="section-video">
+    <source src="media-portfolio-redesign/ai-video.mp4" type="video/mp4">
+</video>
+            </div>
 </section>
 
 
