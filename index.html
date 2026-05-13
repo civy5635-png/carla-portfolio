@@ -176,6 +176,39 @@ body {
     border-left: 4px solid #d97706;
     border-radius: 12px;
 }
+.services-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.services-columns {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.services-columns h3 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.logo-placeholder {
+    width: 250px;
+    height: 250px;
+    border: 3px dashed #d97706;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e293b;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.35);
+    flex-shrink: 0;
+}
     </style>
 <header class="hero-header">
     <div class="overlay">
@@ -236,7 +269,35 @@ body {
       </div>  
     </div>        
 </section>
+<div class="section-divider"></div>
 
+<section class="section-wrap">
+    <h2>Services I Offer</h2>
+
+    <div class="services-section">
+        <div class="services-columns">
+            <div>
+                <h3>Web Design</h3>
+                <p>Custom small business websites</p>
+
+                <h3>Google Visibility</h3>
+                <p>Google Business Profile setup and optimization</p>
+            </div>
+
+            <div>
+                <h3>Automation</h3>
+                <p>Review requests, missed call text-back, and follow-up systems</p>
+
+                <h3>Reputation Management</h3>
+                <p>Helping businesses collect, monitor, and respond to reviews</p>
+            </div>
+        </div>
+
+        <div class="logo-placeholder">
+            Logo Placeholder
+        </div>
+    </div>
+</section>
 
 
 </body>
