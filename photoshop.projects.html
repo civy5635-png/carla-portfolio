@@ -82,6 +82,34 @@ body {
     margin-top: 60px;
 }
 
+.project-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.project-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.project-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+.assets-section {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.assets-section ul {
+    display: inline-block;
+    text-align: left;
+}
+
 .footer-content {
     max-width: 1100px;
     margin: 0 auto;
@@ -186,24 +214,44 @@ shut it down for the day</p>
  
 <h2>Photoshop Project 2: Branding Package for a Startup</h2>
 
-<img src="media/Photoshop-2/Business Card Front.png" alt="Business Card Front" width="500">
-<p><strong>Business Card Front</strong></p>
-<img src="media/Photoshop-2/Business Card Back.png" alt="Business Card Back" width="500">
-<p><strong>Business Card Back</strong></p>
-<img src="media/Photoshop-2/Logo.png" alt="Logo" width="500">
-<p><strong>Logo</strong></p>
-<img src="media/Photoshop-2/Project_2_hero banner.png" alt="Hero Banner" width="500">
-<p><strong>Hero Banner</strong></p>
-<img src="media/Photoshop-2/social_media_post.png" alt="Social Media Post" width="500">
-<p><strong>Social Media Post</strong></p>
+<div class="project-gallery">
 
-<h2>Assets</h2>
+    <figure>
+        <img src="media/Photoshop-2/Business Card Front.png" alt="Business Card Front">
+        <figcaption><strong>Business Card Front</strong></figcaption>
+    </figure>
 
-   <ul>
-      <li>lawn photo graphic</li>
-      <li>small patch graphic</li>
-      <li>lawnmower graphic</li>
-   </ul>
+    <figure>
+        <img src="media/Photoshop-2/Business Card Back.png" alt="Business Card Back">
+        <figcaption><strong>Business Card Back</strong></figcaption>
+    </figure>
+
+    <figure>
+        <img src="media/Photoshop-2/Logo.png" alt="Logo">
+        <figcaption><strong>Logo</strong></figcaption>
+    </figure>
+
+    <figure>
+        <img src="media/Photoshop-2/Project_2_hero banner.png" alt="Hero Banner">
+        <figcaption><strong>Hero Banner</strong></figcaption>
+    </figure>
+
+    <figure>
+        <img src="media/Photoshop-2/social media post.png" alt="Social Media Post">
+        <figcaption><strong>Social Media Post</strong></figcaption>
+    </figure>
+
+</div>
+
+<section class="assets-section">
+    <h2>Assets</h2>
+
+    <ul>
+        <li>lawn photo graphic</li>
+        <li>small patch graphic</li>
+        <li>lawnmower graphic</li>
+    </ul>
+</section>
 
 <p>On day one, I decided to create a branding package for a fictional lawn service. I created a custom size using the settings recommended by ChatGPT. I started with the business card, creating art boards for the front and back, and set the background to a light black color. I added a grass photo graphic on one layer, then added the business name and business number in separate layers using the text tool, opting for white font. On the back side of the card, I created layers for the grass, phone number, and email, leaving room to add the logo after I make it.
 Next, I duplicated the back card artboard and named it 'logo'. I used the ellipse tool, holding down the Shift key, to create the circle background, then filled it with green. On a separate layer, I added a small patch of grass graphic, right-clicked, and chose blending options > color overlay> black to make the graphic black. I made two more layers to put the business name text in black.</p>
