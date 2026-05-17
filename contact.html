@@ -4,272 +4,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
     <style>
-  
-    body {
-        background-color: #f5e6d3;
-        color: #333333;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    .hero-header {
-        background-image: url('media-portfolio-redesign/portfolio-header.png');
-        background-size: cover;
-        background-position: center;
-        height: 350px;
-        width: 100%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: #fff8e7;
-        
-    }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #f5e6d3;
+            color: #333333;
+            font-family: Arial, sans-serif;
+        }
 
-    .overlay {
-        background-color: rgba(0, 0, 0, 0.45);
-        width: 100%;
-        padding: 40px 20px;
-    }
+        body {
+            overflow-x: hidden;
+        }
 
-    .hero-header h1 {
-        font-size: 3em;
-        margin-bottom: 20px;
-    }
-
-    .hero-header nav a {
-        color: #d97706;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1em;
-        margin: 0 8px;
-    }
-
-    .hero-header nav a:hover {
-        color: #fbbf24;
-        text-decoration: underline;
-    }
-
-    main {
-        max-width: 1000px;
-        margin: 30px auto;
-        padding: 0 25px;
-    }
-
-    h2, h3 {
-        color: #1e293b;
-    }
-
-    p {
-        line-height: 1.7;
-        font-size: 1.05em;
-    }
-
-    .page-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 60px;
-}
-
-.contact-intro {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-.butterfly-box video {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-.contact-heading h2 {
-    text-align: left;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.contact-form-section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    background-color: #b86b32;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #8f4f24;
-}
-
-.contact-info {
-    background-color: #f5efe7;
-    padding: 25px;
-    border-radius: 10px;
-}
-* {
-    box-sizing: border-box;
-}
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
- 
-.site-footer {
-    background-color: #1e293b;
-    color: #f5e6d3;
-    padding: 45px 0;
-    margin-top: 60px;
-    width: 100%;
-}
-
-.footer-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-}
-
-
-    .site-footer a {
-        color: #d97706;
-        text-decoration: none;
-    }
-
-    .site-footer a:hover {
-        color: #f5e6d3;
-        text-decoration: underline;
-    }
-
-    .footer-right {
-        text-align: right;
-    }
-
-    .footer-nav {
-        line-height: 1.8;
-        margin-bottom: 25px;
-    }
-
-    .footer-websites {
-        margin-top: 20px;
-    }
-
-    .footer-credit {
-        margin-top: 30px;
-        font-size: 0.85em;
-        color: rgba(245, 230, 211, 0.75);
-    }
-
-    @media (max-width: 768px) {
         .hero-header {
-            height: auto;
+            background-image: url('media-portfolio-redesign/portfolio-header.png');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff8e7;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.45);
+            width: 100%;
+            padding: 40px 20px;
         }
 
         .hero-header h1 {
-            font-size: 2.2em;
+            font-size: 3em;
+            margin-bottom: 20px;
         }
 
-        .footer-content {
-            grid-template-columns: 1fr;
-            text-align: center;
+        .hero-header nav a {
+            color: #d97706;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 0 8px;
         }
 
-        .footer-right {
-            text-align: center;
+        .hero-header nav a:hover {
+            color: #fbbf24;
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            color: #1e293b;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        .page-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 60px;
+        }
+
+        .contact-intro {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .butterfly-box video {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .contact-heading h2 {
+            text-align: left;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-form-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #b86b32;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #8f4f24;
+        }
+
+        .contact-info {
+            background-color: #f5efe7;
+            padding: 25px;
+            border-radius: 10px;
         }
 
         .site-footer {
-    padding: 35px 0;
-}
+            background-color: #1e293b;
+            color: #f5e6d3;
+            padding: 45px 0;
+            margin-top: 60px;
+            width: 100%;
+            clear: both;
+        }
 
-.footer-content {
-    padding: 0 25px;
-    grid-template-columns: 1fr;
-    text-align: center;
-}   
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
 
-    .contact-intro,
-    .contact-form-section {
-        display: block;
-    }
+        .site-footer a {
+            color: #d97706;
+            text-decoration: none;
+        }
 
-    .butterfly-box {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+        .site-footer a:hover {
+            color: #f5e6d3;
+            text-decoration: underline;
+        }
 
-    .contact-heading h2 {
-        text-align: center;
-    }
+        .footer-right {
+            text-align: right;
+        }
 
-    .contact-info {
-        margin-top: 30px;
-    }
+        .footer-nav {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
-    }
+        .footer-websites {
+            margin-top: 20px;
+        }
 
-    figure {
-        margin: 0;
-        text-align: center;
-    }
+        .footer-credit {
+            margin-top: 30px;
+            font-size: 0.85em;
+            color: rgba(245, 230, 211, 0.75);
+        }
 
-    figcaption {
-        margin-top: 8px;
-        font-weight: bold;
-    }
+        @media (max-width: 768px) {
+            .hero-header {
+                height: auto;
+            }
 
-    .section-divider {
-        max-width: 1000px;
-        margin: 40px auto;
-        height: 3px;
-        background: linear-gradient(to right, transparent, #d97706, transparent);
-    }
+            .hero-header h1 {
+                font-size: 2.2em;
+            }
 
-       
-</style>
+            .page-container {
+                padding: 30px 25px;
+            }
+
+            .contact-intro,
+            .contact-form-section {
+                display: block;
+            }
+
+            .butterfly-box {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .contact-heading h2 {
+                text-align: center;
+            }
+
+            .contact-info {
+                margin-top: 30px;
+            }
+
+            .site-footer {
+                padding: 35px 0;
+            }
+
+            .footer-content {
+                padding: 0 25px;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-right {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <header class="hero-header">
@@ -288,46 +254,46 @@ html, body {
 
 <main class="page-container contact-page">
 
-  <section class="contact-intro">
-    <div class="butterfly-box">
-      <video autoplay muted loop playsinline>
-        <source src="media-portfolio-redesign/butterfly.mp4" type="video/mp4">
-        Your browser does not support video.
-      </video>
-    </div>
+    <section class="contact-intro">
+        <div class="butterfly-box">
+            <video autoplay muted loop playsinline>
+                <source src="media-portfolio-redesign/butterfly.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
 
-    <div class="contact-heading">
-      <h2>Contact Me</h2>
-      <p>
-        Have a website project, digital marketing question, or need help improving your online presence?
-        Send me a message and I’ll get back to you soon.
-      </p>
-    </div>
-  </section>
+        <div class="contact-heading">
+            <h2>Contact Me</h2>
+            <p>
+                Have a website project, digital marketing question, or need help improving your online presence?
+                Send me a message and I’ll get back to you soon.
+            </p>
+        </div>
+    </section>
 
-  <section class="contact-form-section">
-    <form class="contact-form" action="#" method="post">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
+    <section class="contact-form-section">
+        <form class="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
 
-      <button type="submit">Send Message</button>
-    </form>
+            <button type="submit">Send Message</button>
+        </form>
 
-    <div class="contact-info">
-      <h3>Other Ways to Reach Me</h3>
-      <p><strong>Email:</strong> carla@email.ellaonline.org</p>
-      <p><strong>Phone:</strong> (254) 358-4794</p>
-      <p><strong>Website:</strong> ellaonline.org</p>
-    </div>
-  </section>
+        <div class="contact-info">
+            <h3>Other Ways to Reach Me</h3>
+            <p><strong>Email:</strong> carla@email.ellaonline.org</p>
+            <p><strong>Phone:</strong> (254) 358-4794</p>
+            <p><strong>Website:</strong> ellaonline.org</p>
+        </div>
+    </section>
 
-
+</main>
 
 <footer class="site-footer">
     <div class="footer-content">
@@ -357,7 +323,7 @@ html, body {
             </div>
 
             <p class="footer-credit">Header image photo by Carrie Shack</p>
-    
+        </div>
 
     </div>
 </footer>
