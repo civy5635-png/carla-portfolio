@@ -139,55 +139,14 @@
     padding: 25px;
     border-radius: 10px;
 }
+* {
+    box-sizing: border-box;
+}
 
-@media (max-width: 768px) {
-    .page-container {
-        padding: 30px 25px;
-    }
-
-    .contact-intro,
-    .contact-form-section {
-        display: block;
-    }
-
-    .butterfly-box {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    .contact-heading h2 {
-        text-align: center;
-    }
-
-    .contact-info {
-        margin-top: 30px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    figure {
-        margin: 0;
-        text-align: center;
-    }
-
-    figcaption {
-        margin-top: 8px;
-        font-weight: bold;
-    }
-
-    .section-divider {
-        max-width: 1000px;
-        margin: 40px auto;
-        height: 3px;
-        background: linear-gradient(to right, transparent, #d97706, transparent);
-    }
-
-    .site-footer {
+body {
+    margin: 0;
+}
+ .site-footer {
         background-color: #1e293b;
         color: #f5e6d3;
         padding: 45px 96px;
@@ -196,18 +155,21 @@
         box-sizing: border-box;
     }
 
-    .footer-content {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 60px;
-    }
+   .site-footer {
+    background-color: #1e293b;
+    color: #f5e6d3;
+    padding: 45px 96px;
+    margin-top: 60px;
+    width: 100%;
+}
 
-    .site-footer h3 {
-        color: #d97706;
-        margin-bottom: 8px;
-    }
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
 
     .site-footer a {
         color: #d97706;
@@ -259,7 +221,54 @@
         .site-footer {
             padding: 35px 25px;
         }
-    
+@media (max-width: 768px) {
+    .page-container {
+        padding: 30px 25px;
+    }
+
+    .contact-intro,
+    .contact-form-section {
+        display: block;
+    }
+
+    .butterfly-box {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .contact-heading h2 {
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-top: 30px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-weight: bold;
+    }
+
+    .section-divider {
+        max-width: 1000px;
+        margin: 40px auto;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #d97706, transparent);
+    }
+
+       
 </style>
 
 <header class="hero-header">
