@@ -227,10 +227,18 @@ html, body {
     grid-template-columns: 1fr;
     text-align: center;
 }
+/* MOBILE ONLY - inside media query */
 @media (max-width: 768px) {
-    .page-container {
-        padding: 30px 25px;
+    .site-footer {
+        padding: 35px 0;
     }
+
+    .footer-content {
+        padding: 0 25px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
 
     .contact-intro,
     .contact-form-section {
