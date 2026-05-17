@@ -139,8 +139,9 @@
     padding: 25px;
     border-radius: 10px;
 }
-* 
+* {
     box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -152,7 +153,7 @@ html, body {
     width: 100%;
 }
  
- .site-footer {
+.site-footer {
     background-color: #1e293b;
     color: #f5e6d3;
     padding: 45px 0;
@@ -218,8 +219,14 @@ html, body {
         }
 
         .site-footer {
-            padding: 35px 25px;
-        }
+    padding: 35px 0;
+}
+
+.footer-content {
+    padding: 0 25px;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
 @media (max-width: 768px) {
     .page-container {
         padding: 30px 25px;
