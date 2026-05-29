@@ -1,6 +1,6 @@
 # Carla Ivy Portfolio
 
-Professional portfolio and web design projects — currently under development.
+Professional portfolio and web design projects
 
 ## Status
 
