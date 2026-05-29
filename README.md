@@ -1,4 +1,4 @@
-# Carla Ivy Portfolio
+# Carla Ivy ~ Portfolio
 
 Professional portfolio and web design projects
 
