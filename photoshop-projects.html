@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photoshop Projects</title>
       <style>
+        * {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
         body {
             background-color: #f4e7d3;
             color: #333333;
@@ -150,6 +164,61 @@ body {
     margin-top: 30px;
     font-size: 0.85rem;
     color: rgba(245, 230, 211, 0.75);
+}
+@media (max-width: 768px) {
+
+  .hero-header {
+    height: 220px;
+    padding: 20px;
+  }
+
+  .overlay {
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 1.1rem;
+  }
+
+  main,
+  section,
+  article,
+  footer {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .footer-content,
+  .footer-links,
+  .footer-columns,
+  .two-column,
+  .columns,
+  .row {
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
 }
     </style>
 </head>  
