@@ -10,7 +10,7 @@ I am actively redesigning and expanding this site as I continue my studies in we
 
 ## About Me
 
-After retiring due to disability, I began teaching myself web design, SEO, automation, and digital marketing. What started as a necessity became a passion for building websites and helping small businesses improve their online presence.
+After retiring due to disability, I began teaching myself web design, SEO, automation, and digital marketing. What started as a necessity became a passion for building websites and helping small businesses improve their online presence. 
 
 ## Current Focus
 
@@ -30,6 +30,7 @@ After retiring due to disability, I began teaching myself web design, SEO, autom
 - Client Website Work
 
 ## Live Site
+## Next task, making it mobile friendly
 
 https://civy5635-png.github.io/carla-portfolio/
 
