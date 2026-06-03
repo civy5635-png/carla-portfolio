@@ -153,7 +153,38 @@ img {
         font-size: 0.85em;
         color: rgba(245, 230, 211, 0.75);
     }
-@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+
+    .hero-header {
+        height: auto;
+        min-height: 220px;
+        align-items: center;
+    }
+
+    .overlay {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .hero-header h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero-header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-header nav a {
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0;
+    }
 
     .site-footer {
         padding: 35px 25px;
@@ -168,7 +199,6 @@ img {
     .footer-right {
         text-align: center;
     }
-
 }
  
 </style>

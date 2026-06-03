@@ -168,27 +168,28 @@ body {
 @media (max-width: 768px) {
 
   .hero-header {
-    height: 220px;
-    padding: 20px;
-  }
+    height: auto;
+    min-height: 220px;
+    align-items: center;
+}
 
   .overlay {
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
   }
 
-  nav {
+  .hero-header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
-    text-align: center;
-  }
+    gap: 10px;
+}
 
-  nav a {
+.hero-header nav a {
     display: inline-block;
-    font-size: 1.1rem;
-  }
+    font-size: 1rem;
+    margin: 0;
+}
 
   main,
   section,
