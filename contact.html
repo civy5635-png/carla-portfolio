@@ -137,7 +137,16 @@
         .contact-form button:hover {
             background-color: #8f4f24;
         }
-
+        .form-success {
+             display: none;
+             margin-top: 25px;
+             padding: 25px;
+             text-align: center;
+             background-color: rgba(255,255,255,0.45);
+             border: 3px solid #d97706;
+             border-radius: 16px;
+             color: #1e293b;
+}
         .contact-info {
             background-color: #f5efe7;
             padding: 25px;
@@ -254,6 +263,32 @@
         }
     </style>
 </head>
+<script>
+const form = document.querySelector(".contact-form");
+const successMessage = document.getElementById("form-success");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    if (response.ok) {
+        form.reset();
+        form.style.display = "none";
+        successMessage.style.display = "block";
+    } else {
+        alert("Something went wrong. Please try again or email me directly.");
+    }
+});
+</script>
 <body>
 <header class="hero-header">
     <div class="overlay">
@@ -302,10 +337,15 @@
         <textarea id="message" name="message" rows="6" required></textarea>
 
         <input type="hidden" name="_subject" value="New message from Carla Ivy portfolio">
-        <input type="hidden" name="_next" value="https://civy5635-png.github.io/carla-portfolio/thankyou.html">
+        
         <button type="submit">Send Message</button>
 
     </form>
+
+    <div id="form-success" class="form-success">
+    <h3>Thank you!</h3>
+    <p>Your message was sent successfully. I’ll get back to you soon.</p>
+    </div>
 
     <div class="contact-info">
         <h3>Other Ways to Reach Me</h3>
