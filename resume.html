@@ -191,15 +191,30 @@ main {
     margin: 0;
   }
 
-  .footer-content,
   .footer-links,
-  .footer-columns,
-  .two-column,
-  .columns,
-  .row {
+.footer-columns,
+.two-column,
+.columns,
+.row {
     display: block;
     width: 100%;
-  }
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 30px;
+    text-align: center;
+}
+
+.footer-left,
+.footer-right,
+.footer-nav,
+.footer-websites,
+.footer-credit {
+    text-align: center;
+}
 
   h1 {
     font-size: 2rem;
