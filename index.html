@@ -357,7 +357,6 @@ body {
     margin: 0;
   }
 
-  .footer-content,
   .footer-links,
   .footer-columns,
   .two-column,
@@ -365,6 +364,23 @@ body {
   .row {
     display: block;
     width: 100%;
+  }
+
+  .site-footer {
+    padding: 35px 25px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-right {
+    text-align: center;
   }
 
   h1 {
@@ -376,21 +392,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.2;
   }
-}
-    .site-footer {
-        padding: 35px 25px;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .footer-right {
-        text-align: center;
-    }
-}
+} 
     </style>
 <header class="hero-header">
     <div class="overlay">
