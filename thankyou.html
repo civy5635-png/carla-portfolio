@@ -11,38 +11,73 @@
             background-color: #e8dcc8;
             color: #1e293b;
             font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .hero-header {
+            background: linear-gradient(
+                rgba(30, 41, 59, 0.55),
+                rgba(30, 41, 59, 0.55)
+            ),
+            url('media-portfolio-redesign/header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .overlay h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .page-container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+            text-align: center;
         }
 
         .thank-you-box {
-            max-width: 700px;
-            margin: 80px auto;
-            padding: 50px;
-            text-align: center;
             background: rgba(255,255,255,0.45);
             border: 3px solid #d97706;
             border-radius: 20px;
+            padding: 50px;
         }
 
         .thank-you-box h2 {
             color: #1e293b;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            margin-top: 0;
         }
 
         .return-button {
             display: inline-block;
-            margin-top: 15px;
-            padding: 12px 30px;
+            margin-top: 20px;
+            padding: 12px 28px;
             background-color: #d97706;
             color: white;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 8px;
             font-weight: bold;
+        }
+
+        .return-button:hover {
+            background-color: #b45309;
+        }
+
+        @media (max-width: 768px) {
+            .overlay h1 {
+                font-size: 2rem;
+            }
+
+            .thank-you-box {
+                padding: 30px 20px;
+            }
         }
     </style>
 
 </head>
-
 <body>
 
 <header class="hero-header">
