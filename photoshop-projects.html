@@ -123,7 +123,43 @@ body {
     display: inline-block;
     text-align: left;
 }
+/* Large Print Button */
+#largePrintButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
 
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #d98200;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Large Print Mode */
+body.large-print p,
+body.large-print li,
+body.large-print a,
+body.large-print label,
+body.large-print input,
+body.large-print textarea {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+/* Keep headings from getting giant */
+body.large-print h1,
+body.large-print h2,
+body.large-print h3 {
+    font-weight: bold;
+}
 .footer-content {
     max-width: 1100px;
     margin: 0 auto;
